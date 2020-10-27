@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const SearchBar = () => {
+const SearchBar = ({ searchValue, setSearchValue }) => {
+
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    setSearchValue(event.target.city.value)
+  }
+
+  console.log(searchValue)
+
   return (
     <div>
-      <input type='text' placeholder='City Name'></input>
-      <button>Search</button>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor='city'></label>
+        <input id='city'></input>
+        <button>Search</button>
+      </form>
     </div>
   );
 };
