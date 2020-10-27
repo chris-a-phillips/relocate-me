@@ -1,4 +1,6 @@
 import React from 'react';
+import Dropdown from './Dropdown';
+import SearchBar from './SearchBar'
 
 const NavBar = () => {
   return (
@@ -6,9 +8,8 @@ const NavBar = () => {
       <div>
         <span>Logo</span>
         <span>Home</span>
-        <span>Dropdown</span>
-        <input type='text'></input>
-        <button>Search</button>
+        <Dropdown />
+        <SearchBar />
       </div>
     </div>
   );

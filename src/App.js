@@ -11,7 +11,7 @@ function App() {
       <Weather />
       <Banner />
       <PageData />
-      hello github
+      App.js
     </div>
   );
 }
