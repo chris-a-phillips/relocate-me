@@ -1,6 +1,6 @@
 import React from 'react';
 
-const VisaInfo = () => {
+const EconomicStatistics = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const VisaInfo = () => {
   );
 };
 
-export default VisaInfo;
+export default EconomicStatistics;
