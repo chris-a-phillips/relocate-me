@@ -1,6 +1,6 @@
 import React from 'react';
 import Dropdown from './Dropdown';
-// import SearchBar from './SearchBar'
+import SearchBar from './SearchBar'
 
 const NavBar = ({ searchValue, setSearchValue }) => {
 
@@ -11,7 +11,7 @@ const NavBar = ({ searchValue, setSearchValue }) => {
         <span>Logo</span>
         <span>Home</span>
         <Dropdown />
-        {/* <SearchBar /> */}
+        <SearchBar />
       </div>
     </div>
   );

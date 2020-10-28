@@ -1,27 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-const QualityOfLife = ({ searchValue, setSearchValue, info }) => {
+const QualityOfLife = () => {
+  const [info, setInfo] = useState([])
+
+  const url = 'https://api.teleport.org/api/urban_areas/slug:san-francisco-bay-area/scores/'
 
 
-  // const url = 'https://api.teleport.org/apicities/?search=Palo%20Alto%2C%20California&embed=city%3Asearch-results%2Fcity%3Aitem%2Fcity%3Aurbanarea%2Fua%3Ascores'
-    
-  // function populate() {
-  //   fetch(url)
-  //     .then((res) => res.json())
-  //     .then(console.log)
-  //     .then((json) => {
-  //       setInfo(json)
-  //     })
-  //     .catch(console.error)
-  // }
+  useEffect(() => {
+    fetch(url) 
+      .then (res => res.json())
+      .then (res =>{
+        setInfo(res)
+      })
+    ;
+  }, [])
 
-  let summary = {}
-
-    // console.log(info)
+    if (info.length === 0) {
+    return(
+      <p>Loading...</p>
+    )
+  }
 
   return (
     <div>
-      
+    {info.categories.map(category => {
+        return(
+          <div key={category.name}>
+            <p>{category.name}</p>
+            <p>{category.score_out_of_10}</p>
+          </div>
+        )
+      })}
     </div>
   );
 };

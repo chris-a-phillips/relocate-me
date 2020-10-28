@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Link } from 'react-router-dom'
 import './App.css';
-// import NavBar from './components/NavBar'
+import NavBar from './components/NavBar'
 // import Weather from './components/Weather'
 // import Banner from './components/Banner'
 import PageData from './components/PageData'
 
 function App() {
   // const [searchValue, setSearchValue] = useState()
+  const [cityData, setCityData] = useState([])
 
   // const handleSubmit = (event) => {
   //   event.preventDefault()
@@ -29,17 +30,18 @@ function App() {
   return (
     <div className="App">
       <Link to='/'>Home</Link>
-      {/* <button onClick={getData}>Get Data</button> */}
+      <NavBar />
+      {/* <button onClick={getData}>Get Data</button>
       
       <Link to='/pagedata'>
         Page Data
-      </Link>
+      </Link> */}
       {/* <PageData info={info}/> */}
-      <Route path='/pagedata' exact render={() => {
+      {/* <Route path='/pagedata' exact render={() => {
           return (
             <PageData/>
           )
-        }}/>
+        }}/> */}
 
 
     </div>

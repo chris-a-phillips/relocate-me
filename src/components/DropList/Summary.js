@@ -36,15 +36,8 @@ const Summary = () => {
     <div>
           {/* <div dangerouslySetInnerHTML={createMarkup()}>
       {summary}
-    </div> */}
-    {info.categories.map(category => {
-        return(
-          <div key={category.name}>
-            <p>{category.name}</p>
-            <p>{category.score_out_of_10}</p>
-          </div>
-        )
-      })}
+
+
       {/* figure out replace method so I that I don't have to use dangerouslySetInnerHTML */}
       {summary}
     </div>
