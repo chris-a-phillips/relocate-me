@@ -1,9 +1,5 @@
 import React from 'react';
-import Summary from './DropList/Summary'
-import QualityOfLife from './DropList/QualityOfLife'
-import EconomicStatistics from './DropList/EconomicStatistics'
-import PopulationAndDemographics from './DropList/PopulationAndDemographics'
-import CountryIndexAndVisa from './DropList/CountryIndexAndVisa'
+
 
 const Dropdown = () => {
   return (
@@ -16,11 +12,6 @@ const Dropdown = () => {
           <option value="PopulationAndDemographics">Population and Demographics</option>
           <option value="CountryIndexAndVisa">Country Index and Visa</option>
         </select>
-      <Summary />
-      <QualityOfLife />
-      <EconomicStatistics />
-      <PopulationAndDemographics />
-      <CountryIndexAndVisa />
     </div>
   );
 };

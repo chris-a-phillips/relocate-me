@@ -5,7 +5,7 @@ import Weather from './components/Weather'
 import Banner from './components/Banner'
 import PageData from './components/PageData'
 
-function App({ searchValue, setSearchValue }) {
+function App() {
   const [searchValue, setSearchValue] = useState()
 
     const handleSubmit = (event) => {
@@ -14,6 +14,14 @@ function App({ searchValue, setSearchValue }) {
   }
 
     console.log(searchValue)
+    const url = 'https://api.teleport.org/api/'
+
+
+  fetch(url)
+    .then(res => res.json())
+    .then(res => {})
+
+
 
   return (
     <div className="App">
@@ -25,10 +33,10 @@ function App({ searchValue, setSearchValue }) {
           <button>Search</button>
         </form>
       </div>
-      <Weather />
-      <Banner />
-      <PageData />
-      App.js
+      <Weather searchValue={searchValue}/>
+      <Banner searchValue={searchValue}/>
+      <PageData searchValue={searchValue} url={url}/>
+
     </div>
   );
 }
