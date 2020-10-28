@@ -1,6 +1,6 @@
 import React from 'react';
 import Dropdown from './Dropdown';
-import SearchBar from './SearchBar'
+// import SearchBar from './SearchBar'
 
 const NavBar = ({ searchValue, setSearchValue }) => {
 
