@@ -1,6 +1,6 @@
 import React from 'react';
 import Dropdown from './Dropdown';
-import SearchBar from './SearchBar'
+import SearchInput from './SearchComponents/SearchInput'
 
 const NavBar = ({ searchValue, setSearchValue }) => {
 
@@ -11,10 +11,13 @@ const NavBar = ({ searchValue, setSearchValue }) => {
         <span>Logo</span>
         <span>Home</span>
         <Dropdown />
-        <SearchBar />
+        <SearchInput />
       </div>
     </div>
   );
 };
 
 export default NavBar;
+// fetch for search`
+// show as list
+// second fetch for details
