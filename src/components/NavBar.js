@@ -1,6 +1,7 @@
 import React from 'react';
 import Dropdown from './Dropdown';
 import SearchInput from './SearchComponents/SearchInput'
+import { Link } from 'react-router-dom';
 
 
 const NavBar = () => {
@@ -9,9 +10,9 @@ const NavBar = () => {
   return (
     <div>
       <div>
+        <Link to='/'>Home</Link>
         <span>Logo</span>
-        <span>Home</span>
-        <Dropdown />
+        {/* <Dropdown /> */}
         <SearchInput />
       </div>
       <main>

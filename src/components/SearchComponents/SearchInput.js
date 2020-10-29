@@ -32,6 +32,10 @@ const SearchInput = () => {
     setSearch(event.target.value)
   }
 
+  // const clearSearchBar = () => {
+  //   setFilteredCities()
+  // }
+
     const listItem = (search) 
     ?  (filteredCities.map(city => {
         return(
@@ -45,6 +49,7 @@ const SearchInput = () => {
   
   return (
     <div className="SearchInput">
+      
       <input type='text'
       placeholder='City Name'
       value={search}
@@ -55,7 +60,6 @@ const SearchInput = () => {
       <main>
         <Route path='/details/:id' component={Details} />
       </main>
-
 
     </div>
   );
