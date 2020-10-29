@@ -4,10 +4,8 @@ import './App.css';
 import NavBar from './Components/NavBar'
 // import Weather from './components/Weather'
 // import Banner from './components/Banner'
-import PageData from './Components/PageData'
 
 function App() {
-  // const [searchValue, setSearchValue] = useState()
   const [cityData, setCityData] = useState([])
 
   // const handleSubmit = (event) => {

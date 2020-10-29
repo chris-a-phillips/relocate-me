@@ -2,7 +2,8 @@ import React from 'react';
 import Dropdown from './Dropdown';
 import SearchInput from './SearchComponents/SearchInput'
 
-const NavBar = ({ searchValue, setSearchValue }) => {
+
+const NavBar = () => {
 
 
   return (
@@ -13,6 +14,9 @@ const NavBar = ({ searchValue, setSearchValue }) => {
         <Dropdown />
         <SearchInput />
       </div>
+      <main>
+
+      </main>
     </div>
   );
 };

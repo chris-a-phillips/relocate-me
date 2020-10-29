@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Cities from './Cities'
+import { Route } from 'react-router-dom';
+import CityNames from './CityNames'
+import Details from '../Details'
 // import SearchPage from './SearchComponents/SearchPage.js';
 
 const SearchInput = () => {
@@ -13,6 +15,7 @@ const SearchInput = () => {
     fetch(url)
       .then(res => res.json())
       .then(json => setCities(json._links.["ua:item"]))
+      .catch(console.error)
   }, [])
 
   useEffect(() => {
@@ -29,7 +32,16 @@ const SearchInput = () => {
     setSearch(event.target.value)
   }
 
-
+    const listItem = (search) 
+    ?  (filteredCities.map(city => {
+        return(
+            <CityNames
+              id={city.href}
+              name={city.name}
+          />
+        )
+      }))
+    : null
   
   return (
     <div className="SearchInput">
@@ -39,31 +51,16 @@ const SearchInput = () => {
       onChange={updateSearch}
       />
 
-      <div className='innerDiv'>
-        {filteredCities.map((city,) => {
-        return(
-          <Cities
-            key={city.name}
-            name={city.name}
-          />
-        )
-      })}
-      </div>
+      <div className='FilteredSearch'>{listItem}</div>
+      <main>
+        <Route path='/details/:id' component={Details} />
+      </main>
 
 
     </div>
   );
-}
+};
 
 export default SearchInput;
 
-    {/* <input
-    value={keyword}
-    placeholder={"search city"}
-    onChange={(e) => keyword = (e.target.value)}
-    />
-    <button
-    onChange
-    // onClick={() => }
-    >Search</button>
-       */}
+          // <Link to={`/details/${city.href}`} key={city.name}>
