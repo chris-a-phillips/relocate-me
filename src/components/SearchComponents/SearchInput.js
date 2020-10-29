@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Route } from 'react-router-dom';
 import CityNames from './CityNames'
 import Details from '../Details'
-// import SearchPage from './SearchComponents/SearchPage.js';
 
 const SearchInput = () => {
   const [search, setSearch] = useState('')
@@ -49,7 +48,7 @@ const SearchInput = () => {
   
   return (
     <div className="SearchInput">
-      
+
       <input type='text'
       placeholder='City Name'
       value={search}

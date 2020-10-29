@@ -1,5 +1,4 @@
 import React from 'react';
-import Dropdown from './Dropdown';
 import SearchInput from './SearchComponents/SearchInput'
 import { Link } from 'react-router-dom';
 
@@ -12,7 +11,6 @@ const NavBar = () => {
       <div>
         <Link to='/'>Home</Link>
         <span>Logo</span>
-        {/* <Dropdown /> */}
         <SearchInput />
       </div>
       <main>

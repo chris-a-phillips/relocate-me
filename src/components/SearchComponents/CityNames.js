@@ -9,8 +9,6 @@ const CityNames = ({ name, id }) => {
 
   const url = (`https://api.teleport.org/api/urban_areas/slug:${name.toLowerCase()}/details/`)
 
-  // const url = (`https://api.teleport.org/api/urban_areas/slug:atlanta/details/`)
-
   const clickItem = (event) => {
     setSelection(event.target.innerText.toLowerCase())
     fetch(url)
@@ -20,8 +18,6 @@ const CityNames = ({ name, id }) => {
       })
       .catch(console.error)
   }
-
-
 
   return (
     <div onClick={clickItem}>
