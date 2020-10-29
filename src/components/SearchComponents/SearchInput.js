@@ -62,5 +62,3 @@ const SearchInput = () => {
 };
 
 export default SearchInput;
-
-          // <Link to={`/details/${city.href}`} key={city.name}>

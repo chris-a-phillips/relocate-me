@@ -5,7 +5,7 @@ const Details = ({ name }) => {
 
   const url = (`https://api.teleport.org/api/urban_areas/slug:${name}/details/`)
 
-    useEffect(() => {
+  useEffect(() => {
     fetch(url)
       .then((res) => res.json())
       .then((json) => {
@@ -16,7 +16,7 @@ const Details = ({ name }) => {
 
   return (
     <div>
-      
+      {/* {selectedCity} */}
     </div>
   );
 };
