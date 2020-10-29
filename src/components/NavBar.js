@@ -10,7 +10,6 @@ const NavBar = () => {
     <div>
       <div>
         <Link to='/'>Home</Link>
-        <span>Logo</span>
         <SearchInput />
       </div>
       <main>

@@ -17,11 +17,7 @@ const QualityOfLife = () => {
     ;
   }, [])
 
-    if (info.length === 0) {
-    return(
-      <p>Loading...</p>
-    )
-  }
+  
 
   return (
     <div>

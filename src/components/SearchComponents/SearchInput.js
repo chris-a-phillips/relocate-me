@@ -7,6 +7,7 @@ const SearchInput = () => {
   const [search, setSearch] = useState('')
   const [cities, setCities] = useState([])
   const [filteredCities, setFilteredCities] = useState([])
+  
 
   const url = 'https://api.teleport.org/api/urban_areas/'
 

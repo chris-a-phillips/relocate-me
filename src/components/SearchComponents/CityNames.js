@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Details from '../Details'
-
+import Banner from './Banner'
 
 const CityNames = ({ name, id }) => {
   const [selection, setSelection] = useState('')
@@ -20,10 +20,15 @@ const CityNames = ({ name, id }) => {
   }
 
   return (
-    <div onClick={clickItem}>
-      <Link to={`/details/${id}`}key={name}>
-        {name}
-      </Link>
+    <div>
+      <div>
+        <Banner name={name} citySize={chosenCity[1]}/>
+      </div>
+      <div onClick={clickItem}>
+        <Link to={`/details/${id}`}key={name}>
+          {name}
+        </Link>
+      </div>
       <div>
         <Details
       name={name}
@@ -43,8 +48,8 @@ const CityNames = ({ name, id }) => {
       taxation={chosenCity[18]}
       />
       </div>
-      
     </div>
+    
   );
 };
 
