@@ -1,4 +1,5 @@
 import React from 'react';
+import QualityOfLife from './DropList/QualityOfLife';
 
 const Details = ({ 
   name, citySize, costOfLiving, culture, economy, healthcare, housing, internal, language, minorities, outdoors, pollution, safety, taxation }) => {

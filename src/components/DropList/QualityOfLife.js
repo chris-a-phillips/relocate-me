@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
 const QualityOfLife = () => {
+///
   const [info, setInfo] = useState([])
+
 
   const url = 'https://api.teleport.org/api/urban_areas/slug:san-francisco-bay-area/scores/'
 
