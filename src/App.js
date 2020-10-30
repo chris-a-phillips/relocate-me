@@ -6,6 +6,8 @@ import PageInfo from './Components/PageInfo'
 import Footer from './Components/Footer'
 import About from './Components/About'
 import CityNames from './Components/CityNames'
+import Summary from './Components/Summary'
+import Landing from './Components/Landing'
 
 
 function App() {
@@ -17,50 +19,49 @@ function App() {
   // const ScoresUrl = `https://api.teleport.org/api/urban_areas/slug:${city}/scores/`
 
   useEffect(() => {
-      fetch(ListUrl)
-    .then(res => res.json())
-    .then(res => {
-      setCitiesList(res._links.['ua:item'])
-    })
+    fetch(ListUrl)
+      .then(res => res.json())
+      .then(res => {
+        setCitiesList(res._links.['ua:item'])
+      })
   }, [])
 
-  const selectCity = () => {
-    setCitiesList('')
-  }
 
-    const listItem = (citiesList) 
-    ?  (citiesList.map(cityName => {
-        return(
-            <CityNames
-              key={cityName.href}
-              id={cityName.name}
-              name={cityName.name}
-          />
-        )
-      }))
-    : null
 
   return (
     <div>
 
-      <div onClick={selectCity}>
+      {/* <div>
         <h2>Cities</h2>
         {listItem}
-      </div>
+      </div> */}
 
       <nav>
         <Nav />
       </nav>
-
+hello world
       <main>
-        <PageInfo />
+        <Route path='/home' exact render={() => {
+          return(
+            <PageInfo 
+            citiesList={citiesList}
+            />
+            )
+          }}/>
+          <Route path='/about' exact component={About}/>
+          <Route path='/cities/:name' exact render={routerProps => {
+            return(
+              <Summary 
+                match={routerProps.match}
+              />
+            )
+          }}/>
+          <Route path='/' exact component={Landing}/>
       </main>
 
       <footer>
         <Footer />
       </footer>
-      {/* <Route path='/' exact render={() => <Redirect to='/home'/>}/> */}
-      <Route path='/about' component={About}/>
 
     </div>
   );

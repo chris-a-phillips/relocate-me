@@ -1,22 +1,20 @@
 import React, { useState, useEffect} from 'react';
+import Weather from './Weather'
 
-const Summary = () => {
-  const [info, setInfo] = useState([])
+const Summary = ({ match }) => {
+  const [info, setInfo] = useState(null)
 
-  const url = 'https://api.teleport.org/api/urban_areas/slug:san-francisco-bay-area/scores/'
+  const url = `https://api.teleport.org/api/urban_areas/slug:${match.params.name.toLowerCase()}/scores/`
 
-  // if (1 === 1) {
-    // fetch(url) 
-    //   .then (res => res.json())
-    //   .then (res =>{
-    //     setInfo(res)
-    //   })
-    // ;
-  // }
 
-  // useEffect(() => {
-    
-  // }, [])
+  useEffect(() => {
+    fetch(url)
+      .then(res => res.json())
+      .then(res => {
+        console.log(res)
+        setInfo(res)
+      })
+  }, [])
 
   // const summary = (info)
   // ? info.categories.map(category => {
@@ -30,19 +28,24 @@ const Summary = () => {
   // : null
 
   // console.log(info)
+  if (!info) {
+    return(null)
+  }
 
+  console.log(match)
 
   return (
     <div>
-      Summary
-      {/* {info.categories.map(category => {
+      <Weather name={match.params.name}/>
+      {match.params.name}
+      {info.categories.map(category => {
           return(
             <div key={category.name}>
               <p>{category.name}</p>
               <p>{category.score_out_of_10}</p>
             </div>
           )
-        })} */}
+        })}
     </div>
   );
 };

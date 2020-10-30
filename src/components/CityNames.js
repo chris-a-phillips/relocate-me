@@ -1,21 +1,23 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'
 
-const CityNames = ({ name, key, id }) => {
-  const [city, setCity] = useState('')
+const CityNames = ({ name, id, city, setCity }) => {
+  // const passDown = (event) => {
+  //   console.log(event)
+  //   console.log(event.target)
+  //   console.log(event.target.innerText.toLowerCase())
+  //   setCity(event.target.innerText.toLowerCase())
+  //   console.log(city)
+  // }
 
-  const passDown = (event) => {
-    setCity(event.target.innerText.toLowerCase())
-    console.log(event.target.innerText)
-    console.log(event.target.innerHTML)
-    console.log(id)
-    console.log(city)
-  }
   
   return (
-    <div onClick={passDown}>
-      <button>
+    <div>
+    {/* <div onClick={work}> */}
+      <Link to={`/cities/${name}`}>
         {name}
-      </button>
+      </Link>
+      {/* {city && 'city state is defined'} */}
     </div>
   );
 };
