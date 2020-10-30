@@ -44,7 +44,6 @@ const CityNames = ({ name, id }) => {
       internal={chosenCity[9]}
       language={chosenCity[11]}
       minorities={chosenCity[12]}
-      outdoors={chosenCity[14]}
       pollution={chosenCity[15]}
       safety={chosenCity[16]}
       taxation={chosenCity[18]}

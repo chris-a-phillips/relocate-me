@@ -1,17 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Route, Link } from 'react-router-dom'
+import { Route, Link, Redirect } from 'react-router-dom'
 import './App.css';
-import PageData from './Components/PageData'
-// import Summary from './'
-// import Weather from './components/Weather'
+import Header from './Components/Header'
+import SearchInput from './Components/SearchComponents/SearchInput'
+
 
 function App() {
   return (
-    <div className="App">
-      
-      <PageData />
-      {/* <Summary /> */}
-
+    <div>
+      <nav>
+        <Header />
+        <Route path='/' exact render={() => <Redirect to='/home'/>}/>
+      </nav>
+      <main>
+        {/* </LandingPage> */}
+        {/* <Weather /> */}
+        <SearchInput />
+      </main>
+      <footer>
+        {/* <Footer /> */}
+      </footer>
     </div>
   );
 }

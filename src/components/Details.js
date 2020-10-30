@@ -2,8 +2,7 @@
 import React from 'react';
 
 const Details = ({ 
-  name, citySize, costOfLiving, culture, economy, healthcare, housing, internal, language, minorities, outdoors, pollution, safety, taxation }) => {
-  
+  name, citySize, costOfLiving, culture, economy, healthcare, housing, internal, language, minorities, pollution, safety, taxation }) => {
 
   return (
     <div className='outerDiv'>
@@ -96,16 +95,6 @@ const Details = ({
           <p>{minorities ? minorities.data[9].string_value : null}</p>
           <h5>{minorities ? minorities.data[12].label : null}</h5>
           <p>{minorities ? minorities.data[12].float_value : null}</p>
-        </div>
-
-        <div className='outdoors'>
-          <h2>{outdoors ? outdoors.label : null}</h2>
-          <h5>{outdoors ? outdoors.data[0].label : null}</h5>
-          <p>{outdoors ? outdoors.data[0].float_value : null}</p>
-          <h5>{outdoors ? outdoors.data[3].label : null}</h5>
-          <p>{outdoors ? outdoors.data[3].float_value : null}</p>
-          <h5>{outdoors ? outdoors.data[5].label : null}</h5>
-          <p>{outdoors ? outdoors.data[5].float_value : null}</p>
         </div>
 
         <div className='pollution'>
