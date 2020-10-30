@@ -3,13 +3,12 @@ import SearchInput from './SearchComponents/SearchInput'
 import { Link } from 'react-router-dom';
 
 
-const NavBar = () => {
-
+const PageData = () => {
+  
 
   return (
     <div>
       <div>
-        <Link to='/'>Home</Link>
         <SearchInput />
       </div>
       <main>
@@ -19,7 +18,7 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default PageData;
 // fetch for search`
 // show as list
 // second fetch for details

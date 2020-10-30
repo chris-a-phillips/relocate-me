@@ -1,3 +1,5 @@
+// fetch quality of life scores
+// map quality of life scores
 import React, { useState, useEffect } from 'react';
 
 const Banner = ({ name, citySize }) => {

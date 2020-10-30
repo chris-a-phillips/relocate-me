@@ -1,3 +1,5 @@
+// fetch for the urban area info (deep stats)
+// filtered search
 import React, { useState, useEffect } from 'react';
 import { Route } from 'react-router-dom';
 import CityNames from './CityNames'

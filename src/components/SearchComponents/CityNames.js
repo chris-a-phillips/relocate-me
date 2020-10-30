@@ -1,3 +1,5 @@
+// fetch for the specific categories
+// send categories to details page
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Details from '../Details'
