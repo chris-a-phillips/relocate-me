@@ -21,8 +21,8 @@ const Details = ({
           <p>{costOfLiving ? costOfLiving.data[5].currency_dollar_value : null}</p>
           <h5>{costOfLiving ? costOfLiving.data[7].label : null}</h5>
           <p>{costOfLiving ? costOfLiving.data[7].currency_dollar_value : null}</p>
-          <h5>{costOfLiving ? costOfLiving.data[10].label : null}</h5>
-          <p>{costOfLiving ? costOfLiving.data[10].currency_dollar_value : null}</p>
+          <h5>{costOfLiving.data ? costOfLiving.data[10].label : null}</h5>
+          <p>{costOfLiving.data ? costOfLiving.data[10].currency_dollar_value : null}</p>
         </div>
 
         <div className='culture'>

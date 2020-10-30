@@ -7,10 +7,8 @@ const Header = () => {
   return (
     <div>
       <div>
-        <Link to='/'>
-          <span>Home</span>
-        </Link>
-        <span></span>
+        <Link to ='/home'>Home</Link>
+        <Link to ='/about'>About</Link>
       </div>
 
       {/* <label for="data">Choose Data To Display:</label>
