@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Weather = () => {
+const About = () => {
   return (
     <div>
-      Weather
+      <h1>About Page</h1>
     </div>
   );
 };
 
-export default Weather;
+export default About;

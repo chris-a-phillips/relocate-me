@@ -59,9 +59,9 @@ const SearchInput = () => {
       />
 
       <div className='FilteredSearch'>{listItem}</div>
-      <main>
+      {/* <main>
         <Route path='/details/:id' component={Details} />
-      </main>
+      </main> */}
 
     </div>
   );

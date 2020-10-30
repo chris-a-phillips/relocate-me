@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Weather = () => {
+const Footer = () => {
   return (
     <div>
-      Weather
+      Footer
     </div>
   );
 };
 
-export default Weather;
+export default Footer;

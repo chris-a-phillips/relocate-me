@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Weather = () => {
+const Home = () => {
   return (
     <div>
-      Weather
+      <h1>Home Page</h1>
     </div>
   );
 };
 
-export default Weather;
+export default Home;

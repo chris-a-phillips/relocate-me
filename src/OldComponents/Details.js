@@ -35,7 +35,8 @@ const Details = ({
           <p>{culture ? culture.data[11].int_value : null}</p>
           <h5>{culture ? culture.data[13].label : null}</h5>
           <p>{culture ? culture.data[13].int_value : null}</p>
-          <h5>{culture ? culture.data[17].label : null}</h5>
+          {/* optional chaining */}
+          <h5>{culture?.data[17]?.label || 'No Data'}</h5>
           <p>{culture ? culture.data[17].int_value : null}</p>
         </div>
 

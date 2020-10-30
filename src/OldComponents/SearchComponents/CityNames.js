@@ -10,6 +10,7 @@ const CityNames = ({ name, id }) => {
   const [chosenCity, setChosenCity] = useState([])
 
   const url = (`https://api.teleport.org/api/urban_areas/slug:${name.toLowerCase()}/details/`)
+  // string replace space with hyphen
 
   const clickItem = (event) => {
     setSelection(event.target.innerText.toLowerCase())
