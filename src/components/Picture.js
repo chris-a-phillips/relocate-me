@@ -9,7 +9,7 @@ const Picture = ({ name }) => {
     fetch(url)
       .then(res => res.json())
       .then(res => {
-        setInfo(res)
+        setInfo(res.photos[0].image.web)
       })
   }, [])
 
@@ -17,12 +17,13 @@ const Picture = ({ name }) => {
     return(null)
   }
 
-  console.log(info)
-
   return (
 
     <div>
-      Picture
+      <img
+      src={info}
+      alt={name}
+      />
     </div>
   );
 };
