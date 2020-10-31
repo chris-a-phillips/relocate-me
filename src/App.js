@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Route, Link, Redirect } from 'react-router-dom'
 import './App.css';
 import Nav from './Components/Nav'
-import PageInfo from './Components/PageInfo'
+import CityMap from './Components/CityMap'
+import CityLink from './Components/CityLink'
 import Footer from './Components/Footer'
 import About from './Components/About'
-import CityNames from './Components/CityNames'
-import Summary from './Components/Summary'
+import PageInfo from './Components/PageInfo'
 import Landing from './Components/Landing'
 
 
@@ -31,11 +31,6 @@ function App() {
   return (
     <div>
 
-      {/* <div>
-        <h2>Cities</h2>
-        {listItem}
-      </div> */}
-
       <nav>
         <Nav />
       </nav>
@@ -43,7 +38,7 @@ hello world
       <main>
         <Route path='/home' exact render={() => {
           return(
-            <PageInfo 
+            <CityMap 
             citiesList={citiesList}
             />
             )
@@ -51,7 +46,7 @@ hello world
           <Route path='/about' exact component={About}/>
           <Route path='/cities/:name' exact render={routerProps => {
             return(
-              <Summary 
+              <PageInfo 
                 match={routerProps.match}
               />
             )

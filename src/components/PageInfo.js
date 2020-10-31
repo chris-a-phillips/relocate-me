@@ -1,34 +1,23 @@
-import React from 'react';
-import CityNames from './CityNames'
+import React, { useState, useEffect} from 'react';
 import Weather from './Weather'
-import Statistics from './Statistics'
+import Numbers from './Numbers'
+import Picture from './Picture'
+import Summary from './Summary'
 
-const PageInfo = ({ citiesList }) => {
-      const listItem = (citiesList) 
-    ?  (citiesList.map(cityName => {
-        return(
-            <CityNames
-              key={cityName.href}
-              id={cityName.name}
-              name={cityName.name}
-          />
-        )
-      }))
-    : null
+const PageInfo = ({ match }) => {
+
+
+  if (!match) {
+    return(null)
+  }
 
   return (
     <div>
-      {listItem}
-      
-      {/* Page Info
-      <header>
-        <Weather />
-      </header>
-
-      <main>
-        <Statistics />
-      </main> */}
-
+      <h2>{match.params.name}</h2>
+      <Weather name={match.params.name}/>
+      <Picture name={match.params.name}/>
+      <Summary name={match.params.name}/>
+      <Numbers name={match.params.name}/>
     </div>
   );
 };
