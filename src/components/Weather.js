@@ -1,26 +1,18 @@
 import React, { useState, useEffect } from 'react';
 
-const Weather = ({ name }) => {
+const Weather = ({ geoNameID }) => {
   const [info, setInfo] = useState(null)
 
-  const url = (`https://api.teleport.org/api/urban_areas/slug:${name.toLowerCase().replace(/ /g, '-').replace(',', '')}/details/`)
+  const url = (`api.openweathermap.org/data/2.5/forecast?id=${geoNameID}appid=${process.env.API_KEY}`)
 
   useEffect(() => {
     fetch(url)
-      .then(res => res.json())
+      // .then(res => res.json())
       .then(res => {
-        setInfo(res.categories[2])
-        console.log(res.categories[2])
+        setInfo(res)
+        console.log(res)
       })
   }, [])
-
-  // if (info ) {
-    
-  // }
-
-  // const weather = info.map(stats => {
-
-  // })
 
 
 
@@ -31,9 +23,6 @@ const Weather = ({ name }) => {
   return (
     <div>
       Weather
-      <h2>
-        {info.label}
-      </h2>
     </div>
   );
 };

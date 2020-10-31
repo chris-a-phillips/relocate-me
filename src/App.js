@@ -9,14 +9,13 @@ import About from './Components/About'
 import PageInfo from './Components/PageInfo'
 import Landing from './Components/Landing'
 
+// go back and try to make details work
+
 
 function App() {
   const [citiesList, setCitiesList] = useState([])
-  const [city, setCity] = useState()
 
   const ListUrl = 'https://api.teleport.org/api/urban_areas/'
-
-  // const ScoresUrl = `https://api.teleport.org/api/urban_areas/slug:${city}/scores/`
 
   useEffect(() => {
     fetch(ListUrl)
@@ -34,9 +33,9 @@ function App() {
       <nav>
         <Nav />
       </nav>
-hello world
+
       <main>
-        <Route path='/home' exact render={() => {
+        <Route path='/cities' exact render={() => {
           return(
             <CityMap 
             citiesList={citiesList}

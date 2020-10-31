@@ -6,7 +6,8 @@ const Nav = () => {
   return (
     <div>
       Nav
-      <Link to ='/home'>Home</Link>
+      <Link to ='/'>*******LandingPageLogo*****</Link>
+      <Link to ='/cities'>Cities</Link>
       <Link to ='/about'>About</Link>
     </div>
   );

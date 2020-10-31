@@ -25,6 +25,10 @@ const Summary = ({ name }) => {
         .replace(/<\/p>/g, '')
         .replace(/<b>/g, '')
         .replace(/<\/b>/g, '')
+        .replace(/<br>/g, '')
+        .replace(/<\/b>/g, '')
+        .replace(/<i>/g, '')
+        .replace(/<\/i>/g, '')
       }
     </div>
   );

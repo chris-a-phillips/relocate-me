@@ -24,7 +24,7 @@ const Numbers = ({ name }) => {
       {info.categories.map(category => {
         return(
           <div key={category.name}>
-            <p>{category.name}</p>
+            <h2>{category.name}</h2>
             <p>{category.score_out_of_10}</p>
           </div>
         )
