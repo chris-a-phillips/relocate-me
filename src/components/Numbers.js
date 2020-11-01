@@ -24,9 +24,15 @@ const Numbers = ({ name }) => {
       <h2 className='city-heading'>Statistics</h2><br></br>
       {info.categories.map(category => {
         return(
-          <div key={category.name}>
-            <h4>{category.name}</h4>
-            <p>{Math.round(category.score_out_of_10)}</p>
+          <div className='numbers-spacing'>
+            <table>
+              <tr>
+              <th><h3>{category.name}</h3></th>
+              </tr>
+              <tr>
+              <td>{Math.round(category.score_out_of_10)}</td>
+              </tr>
+            </table>
           </div>
         )
       })}

@@ -50,22 +50,18 @@
 }
 
 /* About Page */
-.about {
-  display: grid;
-  grid-template-columns: minmax(150px, 25%) 1fr;
-  list-style-type: none;
-  }
-.about-sidebar {
-  height: 85vh;
-  background: ;
-  font-size: 2rem;
-  text-align: center;
-}
+
 .about-content {
   padding: 2rem;
+  background-image: url('https://images.pexels.com/photos/346696/pexels-photo-346696.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 83vh
 }
 .content-shadow {
   box-shadow: 5px 5px 6px 2px rgba(0,0,0,0.28);
+  background-color: rgb(241, 241, 225);
 }
 
 /* City List */
@@ -99,13 +95,32 @@ img {
   grid-column: 2 / 1;
   /* text-align: center; */
   /* overflow: auto; */
-  
+}
+
+.page-info-main-content p {
+  /* text-align: center; */
 }
 
 .page-info-weather {
   grid-column: 3 / 4;
 }
 
+/* Numbers */
+.numbers-spacing {
+  margin: 1.5rem;
+  /* column-count: 3; */
+}
+table {
+  /* border-collapse: collapse; */
+  width: 60%;
+}
+th {
+  background-color: #f2f2f2;
+}
+th, td {
+  text-align: center;
+  padding: 8px;
+}
 
 /* Footer */
 .footer-color {
@@ -129,3 +144,6 @@ img {
   color: whitesmoke;
 }
 
+.test-css {
+  
+}

@@ -3,6 +3,7 @@ import Weather from './Weather'
 import Numbers from './Numbers'
 import Picture from './Picture'
 import Summary from './Summary'
+import Salaries from './Salaries'
 
 const PageInfo = ({ match }) => {
   const [searchInfo, setSearchInfo] = useState(null)
@@ -49,6 +50,7 @@ const PageInfo = ({ match }) => {
         {/* <h2>{fullName === []? fullName.["city:search-results"][0].matching_full_name : match.params.name}</h2> */}
         <div className='page-info-summary'><Summary name={match.params.name}/></div>
         <div className='page-info-main-content'><Numbers name={match.params.name}/></div>
+        <div className='page-info-salaries'><Salaries name={match.params.name}/></div>
         {/* <div className='page-info-weather'><Weather name={match.params.name}/></div> */}
         
         {/* <h2>{fullName === null ? match.params.name : fullName}</h2> */}

@@ -2,17 +2,6 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className='about'>
-      <div className='about-sidebar'>
-        <p>facts and figures</p>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
       <div className='about-content'>
         <div className='content-shadow'>
         <h1>About</h1>
@@ -21,7 +10,6 @@ const About = () => {
           <p>This website's data is provided by the Teleport Cities API. They do incredible work and have a vast amount of data about each of the cities on this website. If you would like further information about any particular city you can check them out <a href="https://teleport.org/">here.</a></p>
         </div>
       </div>
-    </div>
   );
 };
 
