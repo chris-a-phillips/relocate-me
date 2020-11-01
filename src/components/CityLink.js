@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom'
 const CityLink = ({ name }) => {
   
   return (
-    <div>
+    <li>
       <Link to={`/cities/${name}`}>
-        {name}
+        {name}<br></br>
       </Link>
-    </div>
+    </li>
   );
 };
 

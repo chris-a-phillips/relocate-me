@@ -20,12 +20,12 @@ const Numbers = ({ name }) => {
 
   return (
     <div>
-      Numbers
+      <h2>Statistics</h2>
       {info.categories.map(category => {
         return(
           <div key={category.name}>
-            <h2>{category.name}</h2>
-            <p>{category.score_out_of_10}</p>
+            <h4>{category.name}</h4>
+            <p>{Math.round(category.score_out_of_10)}</p>
           </div>
         )
       })}

@@ -43,14 +43,17 @@ const PageInfo = ({ match }) => {
 
   return (
     <div>
-      <h2>{match.params.name}</h2>
-      {/* <h2>{fullName === []? fullName.["city:search-results"][0].matching_full_name : match.params.name}</h2> */}
-      
-      {/* <h2>{fullName === null ? match.params.name : fullName}</h2> */}
       <Picture name={match.params.name}/>
-      <Summary name={match.params.name}/>
-      {/* <Weather latitude={coordinates.latitude} longitude={coordinates.longitude}/> */}
-      <Numbers name={match.params.name}/>
+      <div className='page-info'>
+        <div className='page-info-header'><h1>{match.params.name}</h1></div>
+        {/* <h2>{fullName === []? fullName.["city:search-results"][0].matching_full_name : match.params.name}</h2> */}
+        <div className='page-info-summary'><Summary name={match.params.name}/></div>
+        <div className='page-info-main-content'><Numbers name={match.params.name}/></div>
+        {/* <div className='page-info-weather'><Weather name={match.params.name}/></div> */}
+        
+        {/* <h2>{fullName === null ? match.params.name : fullName}</h2> */}
+        {/* <Weather latitude={coordinates.latitude} longitude={coordinates.longitude}/> */}
+      </div>
     </div>
   );
 };

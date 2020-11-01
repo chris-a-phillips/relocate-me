@@ -28,11 +28,11 @@ function App() {
 
 
   return (
-    <div>
+    <div className='app'>
 
-      <nav>
+      <header>
         <Nav />
-      </nav>
+      </header>
 
       <main>
         <Route path='/cities' exact render={() => {
