@@ -20,7 +20,8 @@ const Numbers = ({ name }) => {
 
   return (
     <div>
-      <h2>Statistics</h2>
+      <br></br>
+      <h2 className='city-heading'>Statistics</h2><br></br>
       {info.categories.map(category => {
         return(
           <div key={category.name}>
