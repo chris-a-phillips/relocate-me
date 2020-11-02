@@ -17,7 +17,7 @@ function App() {
     fetch(ListUrl)
       .then(res => res.json())
       .then(res => {
-        setCitiesList(res._links.['ua:item'])
+        setCitiesList(res._links[`ua:item`])
       })
   }, [])
 
