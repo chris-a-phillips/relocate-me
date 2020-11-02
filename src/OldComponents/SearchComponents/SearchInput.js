@@ -1,3 +1,5 @@
+// fetch for the urban area info (deep stats)
+// filtered search
 import React, { useState, useEffect } from 'react';
 import { Route } from 'react-router-dom';
 import CityNames from './CityNames'
@@ -7,6 +9,7 @@ const SearchInput = () => {
   const [search, setSearch] = useState('')
   const [cities, setCities] = useState([])
   const [filteredCities, setFilteredCities] = useState([])
+  
 
   const url = 'https://api.teleport.org/api/urban_areas/'
 
@@ -56,9 +59,9 @@ const SearchInput = () => {
       />
 
       <div className='FilteredSearch'>{listItem}</div>
-      <main>
+      {/* <main>
         <Route path='/details/:id' component={Details} />
-      </main>
+      </main> */}
 
     </div>
   );
