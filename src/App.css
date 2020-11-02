@@ -141,6 +141,26 @@ th, td {
   color: whitesmoke;
 }
 
-.test-css {
-  
+#expend {
+  display:none;  
+}
+
+#expend + .smalldesc {
+  max-height:0px;
+  overflow:hidden;
+  transition:all .5s ease;
+}
+
+#expend:checked + .smalldesc {
+  max-height:1000px;  
+}
+
+label {
+  color:blue;
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+label:hover {
+  text-decoration:none;  
 }
