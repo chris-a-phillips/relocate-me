@@ -25,17 +25,19 @@ const PageInfo = ({ match }) => {
   }
 
   return (
-    <div>
-      <Picture name={match.params.name}/>
-      <div className='page-info'>
-        <div className='page-info-header'><h2>{fullName !== null? fullName : match.params.name}</h2></div>
-        <div className='page-info-summary'><Summary name={match.params.name}/></div>
-        <Map name={match.params.name}/>
-        <h1 className='page-info-header'>Statistics</h1>
-        <div className='numbers-and-salaries'>
-          <div className='numbers'><Scores name={match.params.name}/></div>
-          <div><MainContent name={match.params.name}/></div>
-        </div>
+    <div className='page-info'>
+      <div className='upper-section'>
+        <Picture name={match.params.name}/>
+        <div className='page-info'>
+          <div className='page-info-header'><h2>{fullName !== null? fullName : match.params.name}</h2></div>
+          <div className='page-info-summary'><Summary name={match.params.name}/></div>
+      </div>
+      </div>
+      <div className='lower-section'>
+        <div className='page-info-header'><h1>Statistics</h1></div>
+        <div className='map'><Map name={match.params.name}/></div>
+        <div className='main-content'><MainContent name={match.params.name}/></div>
+        <div className='scores'><Scores name={match.params.name}/></div>
       </div>
     </div>
   );
