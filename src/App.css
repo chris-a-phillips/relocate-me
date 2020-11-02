@@ -80,25 +80,28 @@ img {
   max-width: 100vw;
   height: auto;
 }
-.page-info-summary {
+.page-info {
   text-align: center;
 }
-.page-info-header {
-  text-align: center;
-}
-.numbers-and-salaries {
+.lower-section {
   display: grid;
-  grid-template-columns: minmax(300px, 40%) 1fr;
-}
-.salaries {
-  column-count: ;
+  grid-template: auto 1fr auto / auto 1fr auto;
 }
 
-.page-info-main-content p {
-  /* text-align: center; */
+.page-info-header {
+  padding: 2rem;
+  grid-column: 1 / 4;
 }
 
-.page-info-weather {
+.map {
+  grid-column: 1 / 2;
+}
+
+.main-content {
+  grid-column: 2 / 3;
+}
+
+.scores {
   grid-column: 3 / 4;
 }
 
@@ -140,7 +143,31 @@ th, td {
   text-decoration: none;
   color: whitesmoke;
 }
+/* remove */
+#expend {
+  display:none;  
+}
 
-.test-css {
-  
+#expend + .smalldesc {
+  max-height:0px;
+  overflow:hidden;
+  transition:all .5s ease;
+}
+
+#expend:checked + .smalldesc {
+  max-height:1000px;  
+}
+
+label {
+  color:blue;
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+label:hover {
+  text-decoration:none;  
+}
+
+.footer-color img {
+  max-width: 5vw;
 }
