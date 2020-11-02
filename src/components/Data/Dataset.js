@@ -14,7 +14,7 @@ const Dataset = ({ info }) => {
         <h2>{info.label}</h2>
           <div>
             <input type="checkbox" id="expend" />
-              <div class="smalldesc">
+              <div class="medium-12 small-12 columns smalldesc">
                 <SpecificCategory info={info}/>
               </div>
             <label for="expend">Read More</label>

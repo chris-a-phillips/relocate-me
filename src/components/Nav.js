@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 const Nav = () => {
   return (
     <div className='nav-bar'>
-      add powered by in footer
       <div className='nav-logo'>
       <Link to ='/'><h5>Home</h5></Link>
       </div>
