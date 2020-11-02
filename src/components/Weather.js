@@ -4,7 +4,7 @@ import axios from 'axios'
 const Weather = ({ latitude, longitude }) => {
   const [info, setInfo] = useState(null)
 
-  const url = (`api.openweathermap.org/data/2.5/forecast?lat=${latitude}lon=&${longitude}&appid=${process.env.API_KEY}`)
+  const url = (`api.openweathermap.org/data/2.5/forecast?lat=${latitude}lon=&${longitude}&appid=${process.env.REACT_APP_STOCK_API_KEY}`)
 
   useEffect(() => {
     // axios.get(url)

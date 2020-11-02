@@ -8,7 +8,6 @@ import Footer from './Components/Footer'
 import About from './Components/About'
 import PageInfo from './Components/PageInfo'
 import Landing from './Components/Landing'
-import Test from './Components/Test'
 
 
 // go back and try to make details work
@@ -27,11 +26,9 @@ function App() {
       })
   }, [])
 
-
-
   return (
     <div className='app'>
-      <Test />
+
       <header>
         <Nav />
       </header>

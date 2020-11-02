@@ -10,49 +10,44 @@ const Salaries = ({ name }) => {
     fetch(url)
       .then(res => res.json())
       .then(res => {
-        setInfo(res)
-        console.log(info)
+        setInfo(res.salaries)
       })
-  }, [])
-
+    }, [])
+    
     if (info === null) {
     return(null)
   }
 
   return (
-    <div>
-      {/* {info.map(salary => {
+    <div className='salaries'>
+      <br></br>
+      <p>*values need to be converted to USD</p>
+      {info.map(salary => {
         return(
-
-        )
-      })} */}
       <table>
         <tr>
-        <th>Job Title</th>
+        <th>{salary.job.title}</th>
         <th>Salary</th>
 
         </tr>
         <tr>
-        <td>Peter</td>
-        <td>Griffin</td>
+        <td>25th Percentile</td>
+        <td>{Math.round(salary.salary_percentiles.percentile_25)} per year</td>
 
         </tr>
         <tr>
-        <td>Lois</td>
-        <td>Griffin</td>
+        <td>50th Percentile</td>
+        <td>{Math.round(salary.salary_percentiles.percentile_50)} per year</td>
 
         </tr>
         <tr>
-        <td>Joe</td>
-        <td>Swanson</td>
-
-        </tr>
-        <tr>
-        <td>Cleveland</td>
-        <td>Brown</td>
+        <td>75th Percentile</td>
+        <td>{Math.round(salary.salary_percentiles.percentile_75)} per year</td>
 
         </tr>
       </table>
+        )
+      })}
     </div>
   );
 };

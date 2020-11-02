@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Test from './Test'
 
 const Numbers = ({ name }) => {
   const [info, setInfo] = useState(null)
@@ -20,8 +21,8 @@ const Numbers = ({ name }) => {
 
   return (
     <div>
+      <Test name ={name}/>
       <br></br>
-      <h2 className='city-heading'>Statistics</h2><br></br>
       {info.categories.map(category => {
         return(
           <div className='numbers-spacing'>

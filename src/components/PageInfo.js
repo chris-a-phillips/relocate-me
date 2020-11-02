@@ -49,8 +49,11 @@ const PageInfo = ({ match }) => {
         <div className='page-info-header'><h1>{match.params.name}</h1></div>
         {/* <h2>{fullName === []? fullName.["city:search-results"][0].matching_full_name : match.params.name}</h2> */}
         <div className='page-info-summary'><Summary name={match.params.name}/></div>
-        <div className='page-info-main-content'><Numbers name={match.params.name}/></div>
-        <div className='page-info-salaries'><Salaries name={match.params.name}/></div>
+        <h2 className='page-info-header'>Statistics</h2>
+        <div className='numbers-and-salaries'>
+          <div className='numbers'><Numbers name={match.params.name}/></div>
+          <div classname='salaries'><Salaries name={match.params.name}/></div>
+        </div>
         {/* <div className='page-info-weather'><Weather name={match.params.name}/></div> */}
         
         {/* <h2>{fullName === null ? match.params.name : fullName}</h2> */}
