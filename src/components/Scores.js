@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Test from './Test'
 
-const Numbers = ({ name }) => {
+const Scores = ({ name }) => {
   const [info, setInfo] = useState(null)
 
   const url = (`https://api.teleport.org/api/urban_areas/slug:${name.toLowerCase().replace(/ /g, '-').replace(',', '')}/scores/`)
@@ -21,7 +20,6 @@ const Numbers = ({ name }) => {
 
   return (
     <div>
-      <Test name ={name}/>
       <br></br>
       {info.categories.map(category => {
         return(
@@ -41,4 +39,4 @@ const Numbers = ({ name }) => {
   );
 };
 
-export default Numbers;
+export default Scores;

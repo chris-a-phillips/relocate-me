@@ -3,7 +3,6 @@ import { Route, Link, Redirect } from 'react-router-dom'
 import './App.css';
 import Nav from './Components/Nav'
 import CityMap from './Components/CityMap'
-import CityLink from './Components/CityLink'
 import Footer from './Components/Footer'
 import About from './Components/About'
 import PageInfo from './Components/PageInfo'
