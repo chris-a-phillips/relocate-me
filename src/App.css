@@ -148,14 +148,14 @@ th, td {
   display:none;  
 }
 
-#expend + .smalldesc {
-  max-height:0px;
-  overflow:hidden;
-  transition:all .5s ease;
+.show {
+  max-height: 1000px;
+  overflow: hidden;
 }
 
-#expend:checked + .smalldesc {
-  max-height:1000px;  
+.hide {
+  max-height: 0;
+  overflow: hidden
 }
 
 label {
