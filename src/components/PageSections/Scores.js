@@ -7,11 +7,12 @@ const Scores = ({ name }) => {
 
 
   useEffect(() => {
-    fetch(url)
-      .then(res => res.json())
-      .then(res => {
-        setInfo(res)
-      })
+		fetch(url)
+			.then((res) => res.json())
+			.then((res) => {
+				setInfo(res);
+			});
+		// eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
     if (info === null) {
@@ -23,7 +24,7 @@ const Scores = ({ name }) => {
       <br></br>
       {info.categories.map(category => {
         return(
-          <div className='numbers-spacing'>
+          <div className='numbers-spacing' key={category.name}>
             <table>
               <tr>
               <th><h3>{category.name}</h3></th>

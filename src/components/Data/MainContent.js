@@ -8,12 +8,13 @@ const MainContent = ({ name }) => {
   const url = (`https://api.teleport.org/api/urban_areas/slug:${name.toLowerCase().replace(/ /g, '-').replace(',', '')}/details/`)
 
   useEffect(() => {
-    fetch(url)
-      .then(res => res.json())
-      .then(res => {
-        setInfo(res.categories)
-      })
-    }, [])
+		fetch(url)
+			.then((res) => res.json())
+			.then((res) => {
+				setInfo(res.categories);
+			});
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   if (info === null) {
     return(null)

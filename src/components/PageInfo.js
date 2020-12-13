@@ -11,13 +11,17 @@ const PageInfo = ({ match }) => {
   const url = (`https://api.teleport.org/api/cities/?search=${match.params.name.toLowerCase().replace(/ /g, '%20').replace(',', '')}`)
 
   useEffect(() => {
-    fetch(url)
-      .then(res => res.json())
-      .then(res => {
-        if (res.count !== 0) {
-          setFullName(res._embedded.["city:search-results"].[0].matching_full_name)
-        }
-      })
+		fetch(url)
+			.then((res) => res.json())
+			.then((res) => {
+				if (res.count !== 0) {
+					setFullName(
+						res._embedded['city:search-results'][0]
+							.matching_full_name
+					);
+				}
+			});
+		// eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   if (!match) {
