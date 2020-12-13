@@ -1,21 +1,29 @@
 import React, { useState, useEffect} from 'react';
 
 const Map = ({ name }) => {
-  const [check, setCheck] = useState(null)
   const [lat, setLat] = useState(null)
   const [lon, setLon] = useState(null)
 
   const url = (`https://api.teleport.org/api/cities/?search=${name.toLowerCase().replace(/ /g, '%20').replace(',', '')}&embed=city%3Asearch-results%2Fcity%3Aitem`)
 
   useEffect(() => {
-      fetch(url)
-        .then(res => res.json())
-        .then(res => {
-          if (res.count !== 0) {
-            setLat(res._embedded.["city:search-results"][0]._embedded["city:item"].location.latlon.latitude)
-            setLon(res._embedded.["city:search-results"][0]._embedded["city:item"].location.latlon.longitude)
-          }
-        })
+		fetch(url)
+			.then((res) => res.json())
+			.then((res) => {
+				if (res.count !== 0) {
+					setLat(
+						res._embedded['city:search-results'][0]._embedded[
+							'city:item'
+						].location.latlon.latitude
+					);
+					setLon(
+						res._embedded['city:search-results'][0]._embedded[
+							'city:item'
+						].location.latlon.longitude
+					);
+				}
+			});
+		// eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   if (lat === null) {

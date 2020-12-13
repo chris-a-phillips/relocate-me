@@ -5,7 +5,7 @@ const SpecificCategory = ({ info }) => {
     <div>
       {info.data.map(category => {
         return(
-          <div>
+          <div key={category.label}>
             <h4>{category.label}</h4>
               {category.type === 'float' ? category.float_value : null}
               {category.type === 'int' ? category.int_value : null}

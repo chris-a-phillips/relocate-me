@@ -7,11 +7,12 @@ const Summary = ({ name }) => {
 
 
   useEffect(() => {
-    fetch(url)
-      .then(res => res.json())
-      .then(res => {
-        setInfo(res.summary)
-      })
+		fetch(url)
+			.then((res) => res.json())
+			.then((res) => {
+				setInfo(res.summary);
+			});
+		// eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
     if (info === null) {
