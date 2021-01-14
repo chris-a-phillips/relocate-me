@@ -1,5 +1,7 @@
 # Relocate Me
 
+/Users/esquire/code/projects/portfolio/src/images/media/relocate-me.gif
+
 ## Description
 My project is called "Relocate Me". Its purpose is to give the user information about a place so they can decide if they want to move there. It will show a list of cities worldwide and display statistics for each one upon clicking it. The city's page will have a picture of the location, a summary of the location, and various data in several categories.
 
