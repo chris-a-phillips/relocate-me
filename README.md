@@ -1,13 +1,21 @@
 <br />
-<p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://github.com/chris-a-phillips/relocate-me/blob/master/src/media/relocate-me.gif" alt="relocate-me-gif" width="600" height="400">
-  </a>
 
   <h3 align="center">Relocate Me</h3>
 
   <p align="center">
     Get info on different places you might want to live next.
+    <br />
+  
+<p align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="https://github.com/chris-a-phillips/relocate-me/blob/master/src/media/relocate-me.gif" alt="relocate-me-gif" width="600" height="400">
+  </a>
+
+  <h3 align="center">
+  Relocate Me
+</h3>
+
+  <p align="center">
     <br />
     <a href="https://github.com/chris-a-phillips/relocate-me"><strong>Explore the docs »</strong></a>
     <br />
