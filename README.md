@@ -94,7 +94,7 @@ This section should list any major frameworks that you built your project using.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+
 
 _For more examples, please refer to the [Documentation](https://github.com/chris-a-phillips/relocate-me)_
 
@@ -113,6 +113,6 @@ Contributions are what make the open source community such an amazing place to b
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [Chris Phillips](https://www.linkedin.com/in/chris-a-phillips/) - phillipsachris@gmail.com
+LinkedIn - [Chris Phillips](https://www.linkedin.com/in/chris-a-phillips/) - phillipsachris@gmail.com
 
 Project Link: [https://please-relocate-me.herokuapp.com/](https://please-relocate-me.herokuapp.com/)
