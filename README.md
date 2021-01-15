@@ -96,7 +96,7 @@ This section should list any major frameworks that you built your project using.
 
 
 
-_For more examples, please refer to the [Documentation](https://github.com/chris-a-phillips/relocate-me)_
+_For more examples, please refer to the [Documentation](https://github.com/chris-a-phillips/relocate-me/blob/master/README.md)_
 
 
 <!-- CONTRIBUTING -->
@@ -115,4 +115,7 @@ Contributions are what make the open source community such an amazing place to b
 
 LinkedIn - [Chris Phillips](https://www.linkedin.com/in/chris-a-phillips/) - phillipsachris@gmail.com
 
-Project Link: [https://please-relocate-me.herokuapp.com/](https://please-relocate-me.herokuapp.com/)
+Project Link: [https://github.com/chris-a-phillips/relocate-me](https://github.com/chris-a-phillips/relocate-me)
+
+Deployed Link: [https://please-relocate-me.herokuapp.com/](https://please-relocate-me.herokuapp.com/)
+
