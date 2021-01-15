@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="" alt="Logo" width="80" height="80">
+    <img src="https://github.com/chris-a-phillips/relocate-me/blob/master/src/media/relocate-me.gif" alt="relocate-me-gif" width="600" height="400">
   </a>
 
   <h3 align="center">Relocate Me</h3>
@@ -50,8 +50,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Relocate Me Gif][relocate-me.gif]](https://please-relocate-me.herokuapp.com/)
-
 The purpose of this app is to give the user information about a place so they can decide if they want to move there. It can be used to see individual statistics of each place or compare cities to each other. There is information about different cities all over the world.
 
 
@@ -94,6 +92,19 @@ This section should list any major frameworks that you built your project using.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+<img src="https://github.com/chris-a-phillips/relocate-me/blob/master/src/media/screenshot-three.png" alt="landing-page" width="600" height="400">
+
+Landing Page
+
+
+<img src="https://github.com/chris-a-phillips/relocate-me/blob/master/src/media/screenshot-one.png" alt="city-details" width="600" height="400">
+
+City Details
+
+
+<img src="https://github.com/chris-a-phillips/relocate-me/blob/master/src/media/screenshot-two.png" alt="city-list" width="600" height="400">
+
+City List
 
 
 _For more examples, please refer to the [Documentation](https://github.com/chris-a-phillips/relocate-me/blob/master/README.md)_
