@@ -1,7 +1,6 @@
 import React, { useState, useEffect} from 'react';
 
 const Map = ({ name }) => {
-  const [check, setCheck] = useState(null)
   const [lat, setLat] = useState(null)
   const [lon, setLon] = useState(null)
 
