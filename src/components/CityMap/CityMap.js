@@ -1,5 +1,6 @@
 import React from 'react';
 import CityNames from '../CityLink/CityLink';
+import './CityMap.css'
 
 const CityMap = ({ citiesList }) => {
 	const list = citiesList

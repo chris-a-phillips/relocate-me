@@ -4,6 +4,7 @@ import Picture from '../PageSections/Picture';
 import Summary from '../PageSections/Summary';
 import Map from '../PageSections/Map';
 import MainContent from '../Data/MainContent';
+import './PageInfo.css'
 
 const PageInfo = ({ match }) => {
 	const [fullName, setFullName] = useState(null);

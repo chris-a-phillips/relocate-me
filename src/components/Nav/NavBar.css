@@ -1,0 +1,26 @@
+/* Nav Bar */
+.nav-bar {
+  background: #1C6EA4;
+  background: linear-gradient(to right, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 1rem;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.nav-logo {
+  grid-column: 1 / span 2;
+}
+.filler-space {
+  grid-column: 3 / span 2;
+}
+.nav-cities {
+  grid-column: 5 / span 1;
+}
+.nav-about {
+  grid-column: 6 / span 1;
+}
