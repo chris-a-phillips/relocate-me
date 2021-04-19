@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Scores.css'
 
 const Scores = ({ name }) => {
   const [info, setInfo] = useState(null)

@@ -1,0 +1,11 @@
+
+/* City List */
+.city-list {
+  column-count: 5;
+}
+.city-list li {
+  display: inline
+}
+.city-heading {
+  text-align: center;
+}

@@ -1,0 +1,29 @@
+/* Page Info */
+img {
+  max-width: 100vw;
+  height: auto;
+}
+.page-info {
+  text-align: center;
+}
+.lower-section {
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+.page-info-header {
+  padding: 2rem;
+  grid-column: 1 / 4;
+}
+
+.map {
+  grid-column: 1 / 2;
+}
+
+.main-content {
+  grid-column: 2 / 3;
+}
+
+.scores {
+  grid-column: 3 / 4;
+}

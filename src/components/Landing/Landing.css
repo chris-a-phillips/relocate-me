@@ -1,0 +1,13 @@
+/* Landing Page */
+.globe {
+  background-image: url('https://images.pexels.com/photos/346696/pexels-photo-346696.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 83vh
+}
+.center-landing-text {
+    display: grid;
+    place-items: center;
+    height: 50vh;
+}
