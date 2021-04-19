@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Route } from 'react-router-dom'
 import './App.css';
-import Nav from './Components/Nav'
-import CityMap from './Components/CityMap'
-import Footer from './Components/Footer'
-import About from './Components/About'
-import PageInfo from './Components/PageInfo'
-import Landing from './Components/Landing'
+import Nav from './components/Nav'
+import CityMap from './components/CityMap'
+import Footer from './components/Footer'
+import PageInfo from './components/PageInfo'
+import Landing from './components/Landing'
+import About from './components/About'
 
 function App() {
   const [citiesList, setCitiesList] = useState([])
